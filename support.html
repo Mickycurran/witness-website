@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Witness</title>
+    <meta name="description" content="Get help with Witness - Tamper-Proof Evidence Camera">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid #00ff00;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #00ff00;
+            text-shadow: 0 0 20px #00ff00;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: #00ff00;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .nav-links a:hover {
+            text-shadow: 0 0 10px #00ff00;
+        }
+        
+        main {
+            max-width: 1000px;
+            margin: 40px auto 80px;
+            padding: 0 20px;
+        }
+        
+        .hero-section {
+            text-align: center;
+            padding: 60px 0 40px;
+            border-bottom: 2px solid rgba(0, 255, 0, 0.2);
+            margin-bottom: 60px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #00ff00 0%, #00cc00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-subtitle {
+            color: #cccccc;
+            font-size: 18px;
+        }
+        
+        .contact-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .contact-card {
+            background: rgba(0, 255, 0, 0.08);
+            border: 2px solid #00ff00;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .contact-card:hover {
+            background: rgba(0, 255, 0, 0.15);
+            transform: translateY(-5px);
+        }
+        
+        .contact-card-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .contact-card h3 {
+            color: #00ff00;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+        
+        .contact-card p {
+            color: #cccccc;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
+        .contact-card a {
+            display: inline-block;
+            padding: 10px 25px;
+            background: rgba(0, 255, 0, 0.2);
+            color: #00ff00;
+            text-decoration: none;
+            border-radius: 8px;
+            border: 1px solid #00ff00;
+            transition: all 0.3s;
+        }
+        
+        .contact-card a:hover {
+            background: rgba(0, 255, 0, 0.3);
+        }
+        
+        h2 {
+            color: #00ff00;
+            font-size: 32px;
+            margin: 60px 0 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(0, 255, 0, 0.3);
+        }
+        
+        .faq-section {
+            margin-bottom: 60px;
+        }
+        
+        .faq-item {
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(0, 255, 0, 0.3);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .faq-question {
+            color: #00ff00;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        
+        .faq-answer {
+            color: #cccccc;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        
+        .faq-answer ul {
+            margin: 15px 0 15px 25px;
+        }
+        
+        .faq-answer li {
+            margin: 8px 0;
+        }
+        
+        .faq-answer code {
+            background: rgba(0, 255, 0, 0.1);
+            border: 1px solid rgba(0, 255, 0, 0.3);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 14px;
+            color: #00ff00;
+        }
+        
+        a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .highlight-box {
+            background: rgba(0, 255, 0, 0.08);
+            border-left: 4px solid #00ff00;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        footer {
+            background: rgba(0, 0, 0, 0.5);
+            border-top: 2px solid #00ff00;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .copyright {
+            color: #666666;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+            
+            h2 {
+                font-size: 24px;
+            }
+            
+            .nav-links {
+                gap: 15px;
+                font-size: 14px;
+            }
+            
+            .logo {
+                font-size: 24px;
+            }
+            
+            .contact-options {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🛡️ WITNESS</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="https://witness-app-a41de.web.app">Verifier</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="hero-section">
+            <h1>Support Center</h1>
+            <p class="hero-subtitle">We're here to help you secure your evidence</p>
+        </div>
+        
+        <div class="contact-options">
+            <div class="contact-card">
+                <div class="contact-card-icon">📧</div>
+                <h3>Email Support</h3>
+                <p>Get help with technical issues, account questions, or general inquiries</p>
+                <a href="mailto:support@witness.app">support@witness.app</a>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-card-icon">💻</div>
+                <h3>GitHub Issues</h3>
+                <p>Report bugs, request features, or contribute to the project</p>
+                <a href="https://github.com/Mickycurran/witness/issues" target="_blank">Open an Issue</a>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-card-icon">🔍</div>
+                <h3>Web Verifier</h3>
+                <p>Verify evidence files and check blockchain timestamps</p>
+                <a href="https://witness-app-a41de.web.app" target="_blank">Launch Verifier</a>
+            </div>
+        </div>
+        
+        <section class="faq-section">
+            <h2>📚 Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">🤔 How do I use Witness to capture evidence?</div>
+                <div class="faq-answer">
+                    <ol>
+                        <li>Open the Witness app on your iPhone</li>
+                        <li>Grant camera permission (required) and location permission (optional)</li>
+                        <li>Choose between <strong>Photo Mode</strong> or <strong>Video Mode</strong></li>
+                        <li>Tap the capture button - the app will automatically capture both front and back cameras</li>
+                        <li>Wait for blockchain timestamping (5-10 seconds)</li>
+                        <li>Export your evidence files via AirDrop or Files app</li>
+                    </ol>
+                    <div class="highlight-box">
+                        <strong>Photo Mode:</strong> Creates 4 files (back photo, front selfie, proof, metadata)<br>
+                        <strong>Video Mode:</strong> Creates 5 files (video, start selfie, end selfie, proof, metadata)
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">🔍 How do I verify evidence files?</div>
+                <div class="faq-answer">
+                    <ol>
+                        <li>Go to <a href="https://witness-app-a41de.web.app" target="_blank">witness-app-a41de.web.app</a></li>
+                        <li>Drag and drop all evidence files into the verifier</li>
+                        <li>The verifier will automatically check:
+                            <ul>
+                                <li>Photo/video integrity (no tampering)</li>
+                                <li>Cryptographic linking (all files match)</li>
+                                <li>Blockchain timestamp (proof of existence)</li>
+                            </ul>
+                        </li>
+                        <li>Results show ✅ PASS or ❌ FAIL for each check</li>
+                    </ol>
+                    <div class="highlight-box">
+                        <strong>Note:</strong> Blockchain verification may show "Pending" for the first 1-6 hours. This is normal - Bitcoin blocks are confirmed every ~10 minutes, and OpenTimestamps waits for multiple confirmations.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">📱 Why does the app need camera and location permissions?</div>
+                <div class="faq-answer">
+                    <strong>Camera Permission (Required):</strong>
+                    <ul>
+                        <li>Captures evidence photos and videos</li>
+                        <li>Captures dual-camera selfies to prove you were present</li>
+                        <li>Without camera access, the app cannot function</li>
+                    </ul>
+                    <strong>Location Permission (Optional):</strong>
+                    <ul>
+                        <li>Records GPS coordinates to prove where photos were taken</li>
+                        <li>Helps counter AI-generated images (location metadata)</li>
+                        <li><strong>The app works perfectly without location</strong> - you can deny this permission</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">⛓️ What is blockchain timestamping?</div>
+                <div class="faq-answer">
+                    Blockchain timestamping creates an immutable proof that your evidence existed at a specific time. Here's how it works:
+                    <ol>
+                        <li><strong>Hash Creation:</strong> Your photo is converted to a unique cryptographic fingerprint (SHA256 hash)</li>
+                        <li><strong>Blockchain Anchoring:</strong> This hash is embedded in the Bitcoin blockchain via OpenTimestamps</li>
+                        <li><strong>Proof Generation:</strong> You receive a .ots proof file that anyone can verify</li>
+                        <li><strong>Tamper Detection:</strong> Any change to the photo changes the hash, breaking verification</li>
+                    </ol>
+                    <div class="highlight-box">
+                        <strong>Important:</strong> Only the hash is timestamped on the blockchain, not your actual photo or location. The hash contains no personal information and cannot be reversed to reveal your data.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">🔒 Is my data private?</div>
+                <div class="faq-answer">
+                    <strong>Yes! Your data stays on your device.</strong>
+                    <ul>
+                        <li>✅ Photos and videos are stored locally on your iPhone</li>
+                        <li>✅ GPS coordinates never leave your device</li>
+                        <li>✅ Only cryptographic hashes are sent to our servers</li>
+                        <li>✅ No accounts, no login, no tracking</li>
+                        <li>✅ You control what to share and when</li>
+                    </ul>
+                    <strong>What goes on the blockchain?</strong>
+                    <ul>
+                        <li>Only a cryptographic hash (unique fingerprint)</li>
+                        <li>The hash contains no personal information</li>
+                        <li>It's mathematically impossible to reverse a hash to get the original data</li>
+                    </ul>
+                    Read our full <a href="privacy.html">Privacy Policy</a> for details.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">💰 Is Witness free? Are there hidden costs?</div>
+                <div class="faq-answer">
+                    <strong>Witness is free to use.</strong>
+                    <ul>
+                        <li>✅ No subscription required</li>
+                        <li>✅ No in-app purchases</li>
+                        <li>✅ Unlimited captures</li>
+                        <li>✅ Unlimited verifications</li>
+                        <li>✅ We pay the Bitcoin network fees</li>
+                    </ul>
+                    <strong>How is this sustainable?</strong>
+                    <ul>
+                        <li>OpenTimestamps is free and open-source</li>
+                        <li>Bitcoin fees are aggregated across many users (very cheap per timestamp)</li>
+                        <li>Firebase hosting and functions have generous free tiers</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">🏛️ Can I use this evidence in court?</div>
+                <div class="faq-answer">
+                    <strong>Yes, but with caveats:</strong>
+                    <ul>
+                        <li>✅ Blockchain timestamps are mathematically verifiable</li>
+                        <li>✅ Evidence shows proof of existence at a specific time</li>
+                        <li>✅ Dual-camera captures prove physical presence</li>
+                        <li>✅ Hash verification detects any tampering</li>
+                    </ul>
+                    <strong>However:</strong>
+                    <ul>
+                        <li>⚠️ Courts have discretion on what evidence to admit</li>
+                        <li>⚠️ You'll need to explain how the technology works</li>
+                        <li>⚠️ Consider consulting a lawyer for your specific case</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <strong>Best Practice:</strong> Witness creates strong supporting evidence for insurance claims, property disputes, and legal documentation. It's designed to strengthen your case, not replace professional legal advice.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">🚨 Troubleshooting: Camera not working</div>
+                <div class="faq-answer">
+                    <strong>If the camera shows a black screen or error:</strong>
+                    <ol>
+                        <li>Go to <code>Settings → Witness → Camera</code> and enable permission</li>
+                        <li>Force-close the app and reopen it</li>
+                        <li>Restart your iPhone</li>
+                        <li>Update to the latest iOS version</li>
+                    </ol>
+                    <strong>If you see "Cannot Record" error:</strong>
+                    <ul>
+                        <li>This happens when another app is using the camera</li>
+                        <li>Close all other camera apps</li>
+                        <li>Force-quit Witness and reopen</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">⏳ Why does blockchain verification show "Pending"?</div>
+                <div class="faq-answer">
+                    <strong>Blockchain verification takes time:</strong>
+                    <ul>
+                        <li>OpenTimestamps waits for Bitcoin block confirmations</li>
+                        <li>Bitcoin blocks are mined every ~10 minutes</li>
+                        <li>Multiple confirmations are required for security</li>
+                        <li>Expect 1-6 hours for full verification</li>
+                    </ul>
+                    <strong>This is normal and expected!</strong>
+                    <div class="highlight-box">
+                        Your evidence is still valid and timestamped. The "Pending" status just means the Bitcoin network is still confirming the transaction. Check back later and it will show "Verified ✅".
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">📤 How do I export and share evidence?</div>
+                <div class="faq-answer">
+                    <strong>After capturing evidence:</strong>
+                    <ol>
+                        <li>Tap the <strong>"EXPORT ALL"</strong> button</li>
+                        <li>Choose a sharing method:
+                            <ul>
+                                <li><strong>AirDrop:</strong> Send to nearby devices</li>
+                                <li><strong>Files:</strong> Save to iCloud, Dropbox, etc.</li>
+                                <li><strong>Email:</strong> Send to yourself or others</li>
+                            </ul>
+                        </li>
+                        <li>All evidence files will be shared together (4 files for photos, 5 for videos)</li>
+                    </ol>
+                    <div class="highlight-box">
+                        <strong>Important:</strong> Keep all files together! The verifier needs all files to properly validate your evidence.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">🛡️ What makes Witness better than regular photos?</div>
+                <div class="faq-answer">
+                    <strong>Regular iPhone photos:</strong>
+                    <ul>
+                        <li>❌ Metadata can be easily edited (date, location)</li>
+                        <li>❌ No proof of when or where photo was taken</li>
+                        <li>❌ Can be modified without detection</li>
+                        <li>❌ Easy to dispute in court/insurance claims</li>
+                    </ul>
+                    <strong>Witness photos:</strong>
+                    <ul>
+                        <li>✅ Blockchain timestamp proves exact time</li>
+                        <li>✅ Dual-camera capture proves you were present</li>
+                        <li>✅ Any modification instantly breaks verification</li>
+                        <li>✅ Math-based proof that's hard to dispute</li>
+                        <li>✅ Independently verifiable by anyone</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>📞 Still Need Help?</h2>
+            <div class="highlight-box">
+                <p><strong>Email us:</strong> <a href="mailto:support@witness.app">support@witness.app</a></p>
+                <p><strong>GitHub Issues:</strong> <a href="https://github.com/Mickycurran/witness/issues" target="_blank">github.com/Mickycurran/witness/issues</a></p>
+                <p><strong>Response Time:</strong> We aim to respond within 24-48 hours</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+            <a href="https://witness-app-a41de.web.app">Web Verifier</a>
+            <a href="https://github.com/Mickycurran/witness">GitHub</a>
+        </div>
+        <p class="copyright">© 2025 Witness. Powered by OpenTimestamps + Bitcoin Blockchain.</p>
+    </footer>
+</body>
+</html>
+

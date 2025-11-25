@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Witness</title>
+    <meta name="description" content="Witness Privacy Policy - We protect your privacy and don't upload your photos.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid #00ff00;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #00ff00;
+            text-shadow: 0 0 20px #00ff00;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: #00ff00;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .nav-links a:hover {
+            text-shadow: 0 0 10px #00ff00;
+        }
+        
+        main {
+            max-width: 900px;
+            margin: 40px auto 80px;
+            padding: 0 20px;
+        }
+        
+        .hero-section {
+            text-align: center;
+            padding: 60px 0 40px;
+            border-bottom: 2px solid rgba(0, 255, 0, 0.2);
+            margin-bottom: 60px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #00ff00 0%, #00cc00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .last-updated {
+            color: #888888;
+            font-size: 14px;
+        }
+        
+        .tldr-box {
+            background: rgba(0, 255, 0, 0.12);
+            border: 2px solid #00ff00;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .tldr-box h2 {
+            color: #00ff00;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        
+        .tldr-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .tldr-box li {
+            padding: 10px 0;
+            font-size: 16px;
+            color: #cccccc;
+        }
+        
+        h2 {
+            color: #00ff00;
+            font-size: 32px;
+            margin: 60px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(0, 255, 0, 0.3);
+        }
+        
+        h3 {
+            color: #00ff00;
+            font-size: 24px;
+            margin: 40px 0 15px;
+        }
+        
+        p {
+            color: #cccccc;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        
+        ul, ol {
+            color: #cccccc;
+            margin: 15px 0 20px 30px;
+        }
+        
+        li {
+            margin: 10px 0;
+        }
+        
+        code {
+            background: rgba(0, 255, 0, 0.1);
+            border: 1px solid rgba(0, 255, 0, 0.3);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 14px;
+            color: #00ff00;
+        }
+        
+        pre {
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid #00ff00;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            overflow-x: auto;
+            color: #00ff00;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 14px;
+        }
+        
+        a {
+            color: #00ff00;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .highlight-box {
+            background: rgba(0, 255, 0, 0.08);
+            border-left: 4px solid #00ff00;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+        
+        .contact-box {
+            background: rgba(0, 0, 0, 0.5);
+            border: 2px solid #00ff00;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 60px 0;
+            text-align: center;
+        }
+        
+        .contact-box h2 {
+            margin-top: 0;
+            border-bottom: none;
+        }
+        
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-links a {
+            background: rgba(0, 255, 0, 0.1);
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: 1px solid #00ff00;
+            display: inline-block;
+        }
+        
+        .contact-links a:hover {
+            background: rgba(0, 255, 0, 0.2);
+            text-decoration: none;
+        }
+        
+        footer {
+            background: rgba(0, 0, 0, 0.5);
+            border-top: 2px solid #00ff00;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .copyright {
+            color: #666666;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+            
+            h2 {
+                font-size: 24px;
+            }
+            
+            h3 {
+                font-size: 20px;
+            }
+            
+            .nav-links {
+                gap: 15px;
+                font-size: 14px;
+            }
+            
+            .logo {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🛡️ WITNESS</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="https://witness-app-a41de.web.app">Verifier</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="hero-section">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: November 25, 2025</p>
+        </div>
+        
+        <div class="tldr-box">
+            <h2>📋 Summary (TL;DR)</h2>
+            <ul>
+                <li>✅ <strong>Photos stay on your iPhone</strong> - We don't upload them</li>
+                <li>✅ <strong>Location is optional</strong> - App works without it</li>
+                <li>✅ <strong>We only use cryptographic hashes</strong> - Not your actual data</li>
+                <li>✅ <strong>Blockchain timestamp is public</strong> - But contains no personal info</li>
+                <li>✅ <strong>You control your data</strong> - Export and delete anytime</li>
+                <li>✅ <strong>No selling data</strong> - We're not in the data business</li>
+                <li>✅ <strong>GDPR & CCPA compliant</strong> - We respect privacy laws</li>
+            </ul>
+        </div>
+        
+        <h2>Overview</h2>
+        <p>Witness is a forensic evidence camera app that creates tamper-proof photos using blockchain verification. We are committed to protecting your privacy and being transparent about how we handle your data.</p>
+        
+        <h2>What Data We Collect</h2>
+        
+        <h3>Data You Create</h3>
+        <ul>
+            <li><strong>Photos:</strong> Captured from your device's cameras (back and front)</li>
+            <li><strong>GPS Coordinates:</strong> Your location at time of capture (OPTIONAL - you can decline)</li>
+            <li><strong>Device Information:</strong> Device model, iOS version, app version</li>
+            <li><strong>Camera Metadata:</strong> Camera settings (orientation, timestamp)</li>
+            <li><strong>Cryptographic Hashes:</strong> SHA256 fingerprints of your photos and metadata</li>
+        </ul>
+        
+        <h3>Data We Don't Collect</h3>
+        <ul>
+            <li>❌ Your name or personal identity</li>
+            <li>❌ Contact information</li>
+            <li>❌ Browsing history</li>
+            <li>❌ Continuous location tracking</li>
+            <li>❌ Social media profiles</li>
+            <li>❌ Payment information (app uses Apple's payment system)</li>
+        </ul>
+        
+        <h2>How We Use Your Data</h2>
+        
+        <h3>Local Storage (On Your Device)</h3>
+        <ul>
+            <li>All photos and metadata are stored <strong>locally on your iPhone</strong></li>
+            <li>You have full control over this data</li>
+            <li>We cannot access files stored on your device</li>
+            <li>Files remain on your device until you delete them</li>
+        </ul>
+        
+        <h3>Cloud Processing (Firebase)</h3>
+        <p>When you capture evidence, we send the following to our Firebase server:</p>
+        <ul>
+            <li><strong>Cryptographic hashes</strong> of your photos (NOT the actual photos)</li>
+            <li><strong>Metadata hash</strong> (NOT the actual metadata)</li>
+            <li>These hashes are used to create a blockchain timestamp</li>
+        </ul>
+        
+        <div class="highlight-box">
+            <strong>We NEVER upload:</strong>
+            <ul>
+                <li>❌ Your actual photos</li>
+                <li>❌ Your GPS coordinates</li>
+                <li>❌ Any personally identifiable information</li>
+            </ul>
+        </div>
+        
+        <h3>Blockchain (Bitcoin via OpenTimestamps)</h3>
+        <p>The cryptographic <strong>manifest hash</strong> (a combination of photo hashes and metadata hash) is timestamped on the Bitcoin blockchain.</p>
+        <ul>
+            <li>This hash is <strong>public and permanent</strong> on the blockchain</li>
+            <li>The hash contains NO personal information, photos, or location data</li>
+            <li>It's mathematically impossible to reverse a hash to get the original data</li>
+        </ul>
+        
+        <h3>Technical Implementation</h3>
+        <p>Witness uses <strong>OpenTimestamps</strong>, an open-source protocol for creating verifiable timestamps on the Bitcoin blockchain. When you capture evidence:</p>
+        
+        <pre>1. Photo captured → Hashed on device (SHA256)
+2. Hash → Sent to Firebase Function
+3. Firebase → Submits to OpenTimestamps
+4. OpenTimestamps → Anchors in Bitcoin
+5. Proof (.ots) → Returned to your device
+6. All data → Stored locally on your iPhone</pre>
+        
+        <p>This process:</p>
+        <ul>
+            <li>✅ Proves your evidence existed at a specific time</li>
+            <li>✅ Is independently verifiable by anyone</li>
+            <li>✅ Doesn't require trusting Witness or any third party</li>
+            <li>✅ Uses the security of Bitcoin's decentralized network</li>
+            <li>✅ Costs nothing (we pay the minimal Bitcoin fees)</li>
+        </ul>
+        
+        <p>The OpenTimestamps protocol is open-source and can be verified at: <a href="https://opentimestamps.org" target="_blank">opentimestamps.org</a></p>
+        
+        <h2>Data Sharing</h2>
+        
+        <h3>We Don't Sell Your Data</h3>
+        <ul>
+            <li>We will NEVER sell, rent, or trade your personal information</li>
+            <li>We don't share data with advertisers or data brokers</li>
+        </ul>
+        
+        <h3>When You Choose to Share</h3>
+        <ul>
+            <li>You can export evidence files (photos, proofs, metadata) via AirDrop, email, etc.</li>
+            <li>This is YOUR choice - we don't automatically share anything</li>
+            <li>When you share files, the recipient can see whatever is in those files</li>
+        </ul>
+        
+        <h3>Web Verification</h3>
+        <ul>
+            <li>Our website verifies evidence files</li>
+            <li>The website runs <strong>in your browser</strong> (client-side)</li>
+            <li>Files you upload for verification are NOT stored on our servers</li>
+            <li>Verification happens locally in your browser</li>
+        </ul>
+        
+        <h2>Your Rights</h2>
+        
+        <h3>Access & Control</h3>
+        <ul>
+            <li>✅ View all captured evidence on your device</li>
+            <li>✅ Export evidence files at any time (AirDrop, Files app, etc.)</li>
+            <li>✅ Delete evidence files from your device</li>
+            <li>✅ Decline location permission (app works without it)</li>
+        </ul>
+        
+        <h3>Data Deletion</h3>
+        <ul>
+            <li><strong>Local Files:</strong> Delete evidence from your iPhone at any time</li>
+            <li><strong>Blockchain Timestamp:</strong> Cannot be deleted (it's on public blockchain, contains no personal info)</li>
+            <li><strong>Firebase Logs:</strong> Automatically deleted after 30 days</li>
+        </ul>
+        
+        <h2>Third-Party Services</h2>
+        
+        <h3>Firebase (Google)</h3>
+        <ul>
+            <li>We use Firebase Cloud Functions for blockchain timestamping</li>
+            <li>Firebase Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
+            <li>Firebase is GDPR and CCPA compliant</li>
+        </ul>
+        
+        <h3>OpenTimestamps</h3>
+        <ul>
+            <li>Free, open-source timestamping service</li>
+            <li>No accounts, no authentication, no tracking</li>
+            <li>OpenTimestamps doesn't know who submitted timestamps</li>
+            <li>Data is anonymous</li>
+        </ul>
+        
+        <h3>Bitcoin Blockchain</h3>
+        <ul>
+            <li>Public, decentralized ledger</li>
+            <li>Only cryptographic hashes are stored (no personal data)</li>
+            <li>Hashes are permanent and cannot be deleted</li>
+            <li>This is inherent to blockchain technology</li>
+        </ul>
+        
+        <h2>Security</h2>
+        
+        <h3>How We Protect Your Data</h3>
+        <ul>
+            <li>✅ <strong>Cryptographic hashing:</strong> SHA256 (NIST-approved standard)</li>
+            <li>✅ <strong>End-to-end verification:</strong> Math-based security, not trust-based</li>
+            <li>✅ <strong>Local storage:</strong> Photos never leave your device unless you share them</li>
+            <li>✅ <strong>HTTPS:</strong> All network communication is encrypted</li>
+            <li>✅ <strong>No user accounts:</strong> Nothing to hack, no passwords to steal</li>
+        </ul>
+        
+        <h2>Children's Privacy</h2>
+        <ul>
+            <li>Witness is not directed to children under 13</li>
+            <li>We don't knowingly collect data from children under 13</li>
+            <li>If you're under 13, please don't use this app</li>
+        </ul>
+        
+        <h2>International Users</h2>
+        <ul>
+            <li>Witness is available worldwide</li>
+            <li>Data processing occurs in Firebase data centers (primarily US)</li>
+            <li>Bitcoin blockchain is decentralized (operates globally)</li>
+            <li>We comply with GDPR (EU), CCPA (California), and other privacy laws</li>
+        </ul>
+        
+        <div class="contact-box">
+            <h2>Contact Us</h2>
+            <p>If you have questions about this privacy policy or how we handle your data:</p>
+            <div class="contact-links">
+                <a href="mailto:privacy@witness.app">📧 Email Support</a>
+                <a href="support.html">🆘 Help Center</a>
+                <a href="https://github.com/Mickycurran/witness">💻 GitHub</a>
+            </div>
+        </div>
+        
+        <h2>Technical Details (For Transparency)</h2>
+        <p>For technical users who want to understand or audit our system:</p>
+        
+        <h3>Open-Source Components</h3>
+        <ul>
+            <li><strong>OpenTimestamps:</strong> Open-source protocol (<a href="https://opentimestamps.org" target="_blank">opentimestamps.org</a>)</li>
+            <li><strong>SHA256 Hashing:</strong> Industry-standard cryptographic hashing (NIST-approved)</li>
+            <li><strong>Bitcoin Blockchain:</strong> Public, decentralized ledger for timestamp anchoring</li>
+        </ul>
+        
+        <h3>Verification Independence</h3>
+        <ul>
+            <li>Anyone can verify Witness evidence without using our app or website</li>
+            <li>The OpenTimestamps CLI tool can independently verify .ots files</li>
+            <li>Our web verifier source code is publicly viewable</li>
+            <li>No proprietary technology - everything can be audited</li>
+        </ul>
+        
+        <div class="highlight-box">
+            <strong>Why OpenTimestamps?</strong>
+            <ul>
+                <li><strong>Open Standard:</strong> Not controlled by any single company</li>
+                <li><strong>Free:</strong> No ongoing costs or subscriptions</li>
+                <li><strong>Decentralized:</strong> Uses Bitcoin's global network</li>
+                <li><strong>Proven:</strong> Used by major organizations for timestamping</li>
+                <li><strong>Auditable:</strong> You can verify it works exactly as described</li>
+            </ul>
+        </div>
+        
+        <p style="text-align: center; margin-top: 60px; color: #888888;">
+            <strong>Witness App</strong> - Truth You Can Prove<br>
+            Version 1.0 | November 2025
+        </p>
+    </main>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+            <a href="https://witness-app-a41de.web.app">Web Verifier</a>
+            <a href="https://github.com/Mickycurran/witness">GitHub</a>
+        </div>
+        <p class="copyright">© 2025 Witness. Powered by OpenTimestamps + Bitcoin Blockchain.</p>
+    </footer>
+</body>
+</html>
+

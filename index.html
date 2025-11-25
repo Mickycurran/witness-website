@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Witness - Tamper-Proof Evidence Camera</title>
+    <meta name="description" content="Create blockchain-verified photos that insurance companies and courts can't dispute.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid #00ff00;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #00ff00;
+            text-shadow: 0 0 20px #00ff00;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: #00ff00;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .nav-links a:hover {
+            text-shadow: 0 0 10px #00ff00;
+        }
+        
+        .hero {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 56px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #00ff00 0%, #00cc00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .tagline {
+            font-size: 24px;
+            color: #cccccc;
+            margin-bottom: 40px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #00ff00 0%, #00cc00 100%);
+            color: #000000;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 255, 0, 0.5);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #00ff00;
+            border: 2px solid #00ff00;
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(0, 255, 0, 0.1);
+        }
+        
+        .features {
+            max-width: 1200px;
+            margin: 100px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .feature {
+            background: rgba(0, 255, 0, 0.08);
+            border: 1px solid #00ff00;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .feature h3 {
+            color: #00ff00;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        
+        .feature p {
+            color: #cccccc;
+            font-size: 16px;
+        }
+        
+        footer {
+            background: rgba(0, 0, 0, 0.5);
+            border-top: 2px solid #00ff00;
+            padding: 40px 20px;
+            margin-top: 100px;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .copyright {
+            color: #666666;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+            
+            .tagline {
+                font-size: 18px;
+            }
+            
+            .nav-links {
+                gap: 15px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🛡️ WITNESS</div>
+            <ul class="nav-links">
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="https://witness-app-a41de.web.app">Verifier</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Tamper-Proof Evidence</h1>
+            <p class="tagline">Your phone. Their lies. Bitcoin decides.</p>
+            <p class="tagline">Create blockchain-verified photos that insurance companies and courts can't dispute.</p>
+            
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">Download on App Store</a>
+                <a href="https://witness-app-a41de.web.app" class="btn btn-secondary">Verify Evidence</a>
+            </div>
+        </section>
+        
+        <section class="features">
+            <div class="feature">
+                <div class="feature-icon">📸</div>
+                <h3>Dual Camera Capture</h3>
+                <p>Captures both back camera (evidence) and front camera (you) simultaneously, proving you were physically present.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">⛓️</div>
+                <h3>Blockchain Verified</h3>
+                <p>Every photo is timestamped on the Bitcoin blockchain, creating immutable proof that can't be backdated.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🔐</div>
+                <h3>Cryptographically Secure</h3>
+                <p>SHA256 hashing ensures any modification, even 1 pixel, breaks the verification and is instantly detectable.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">⚖️</div>
+                <h3>Court Admissible</h3>
+                <p>Math-based proof that holds up in legal disputes, insurance claims, and property documentation.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <h3>Privacy First</h3>
+                <p>Photos stay on YOUR device. Only cryptographic hashes are transmitted. No accounts. No data selling.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">✅</div>
+                <h3>Independently Verifiable</h3>
+                <p>Anyone can verify your evidence on our free website without needing the app or trusting us.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+            <a href="https://witness-app-a41de.web.app">Web Verifier</a>
+            <a href="https://github.com/Mickycurran/witness">GitHub</a>
+        </div>
+        <p class="copyright">© 2025 Witness. Powered by OpenTimestamps + Bitcoin Blockchain.</p>
+    </footer>
+</body>
+</html>
+
