@@ -14,15 +14,15 @@
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-            color: #ffffff;
+            background: #ffffff;
+            color: #333333;
             line-height: 1.6;
         }
         
         header {
-            background: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(10px);
-            border-bottom: 2px solid #0066CC;
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid #e0e0e0;
             padding: 20px 0;
             position: sticky;
             top: 0;
@@ -42,7 +42,6 @@
             font-size: 32px;
             font-weight: bold;
             color: #0066CC;
-            text-shadow: 0 0 20px rgba(0, 102, 204, 0.5);
         }
         
         .nav-links {
@@ -59,7 +58,8 @@
         }
         
         .nav-links a:hover {
-            text-shadow: 0 0 10px rgba(0, 102, 204, 0.5);
+            color: #004C99;
+            text-decoration: underline;
         }
         
         .hero {
@@ -80,7 +80,7 @@
         
         .tagline {
             font-size: 24px;
-            color: #cccccc;
+            color: #666666;
             margin-bottom: 40px;
         }
         
@@ -105,12 +105,12 @@
         
         .btn-primary {
             background: linear-gradient(135deg, #0066CC 0%, #004C99 100%);
-            color: #000000;
+            color: #ffffff;
         }
         
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(0, 102, 204, 0.5);
+            box-shadow: 0 5px 20px rgba(0, 102, 204, 0.3);
         }
         
         .btn-secondary {
@@ -133,11 +133,17 @@
         }
         
         .feature {
-            background: rgba(0, 102, 204, 0.1);
-            border: 1px solid #0066CC;
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
             border-radius: 12px;
             padding: 30px;
             text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .feature:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
         }
         
         .feature-icon {
@@ -152,13 +158,13 @@
         }
         
         .feature p {
-            color: #cccccc;
+            color: #666666;
             font-size: 16px;
         }
         
         footer {
-            background: rgba(0, 0, 0, 0.5);
-            border-top: 2px solid #0066CC;
+            background: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
             padding: 40px 20px;
             margin-top: 100px;
             text-align: center;
@@ -291,31 +297,31 @@
                 <div style="text-align: center;">
                     <div style="font-size: 64px; margin-bottom: 20px;">📱</div>
                     <h3 style="color: #0066CC; margin-bottom: 15px; font-size: 24px;">1. Capture</h3>
-                    <p style="color: #cccccc; font-size: 16px;">Open Witness and tap to capture photos or videos. Dual cameras prove you were physically present.</p>
+                    <p style="color: #666666; font-size: 16px;">Open Witness and tap to capture photos or videos. Dual cameras prove you were physically present.</p>
                 </div>
                 
                 <div style="text-align: center;">
                     <div style="font-size: 64px; margin-bottom: 20px;">⛓️</div>
                     <h3 style="color: #0066CC; margin-bottom: 15px; font-size: 24px;">2. Blockchain Timestamp</h3>
-                    <p style="color: #cccccc; font-size: 16px;">Evidence is automatically timestamped on Bitcoin blockchain. Immutable proof that can't be backdated.</p>
+                    <p style="color: #666666; font-size: 16px;">Evidence is automatically timestamped on Bitcoin blockchain. Immutable proof that can't be backdated.</p>
                 </div>
                 
                 <div style="text-align: center;">
                     <div style="font-size: 64px; margin-bottom: 20px;">📤</div>
                     <h3 style="color: #0066CC; margin-bottom: 15px; font-size: 24px;">3. Export & Share</h3>
-                    <p style="color: #cccccc; font-size: 16px;">Share evidence files via AirDrop, email, or cloud storage. Files include photo/video + cryptographic proof.</p>
+                    <p style="color: #666666; font-size: 16px;">Share evidence files via AirDrop, email, or cloud storage. Files include photo/video + cryptographic proof.</p>
                 </div>
                 
                 <div style="text-align: center;">
                     <div style="font-size: 64px; margin-bottom: 20px;">✅</div>
                     <h3 style="color: #0066CC; margin-bottom: 15px; font-size: 24px;">4. Verify Anytime</h3>
-                    <p style="color: #cccccc; font-size: 16px;">Anyone can verify evidence on our free website. Math-based verification, not trust-based.</p>
+                    <p style="color: #666666; font-size: 16px;">Anyone can verify evidence on our free website. Math-based verification, not trust-based.</p>
                 </div>
             </div>
             
-            <div style="background: rgba(0, 102, 204, 0.1); border-left: 4px solid #0066CC; padding: 30px; border-radius: 8px; margin-top: 40px;">
+            <div style="background: rgba(0, 102, 204, 0.08); border-left: 4px solid #0066CC; padding: 30px; border-radius: 8px; margin-top: 40px;">
                 <p style="color: #0066CC; font-size: 20px; font-weight: bold; margin-bottom: 15px;">Perfect for Property Professionals</p>
-                <p style="color: #cccccc; font-size: 16px; line-height: 1.8;">
+                <p style="color: #666666; font-size: 16px; line-height: 1.8;">
                     Document property condition at move-in. Capture damage for insurance claims. Verify construction completion dates. 
                     Create undeniable proof for tenant disputes. Your evidence, timestamped on the blockchain, ready for court.
                 </p>
@@ -363,7 +369,7 @@
         <section class="features" style="margin-top: 40px;">
             <h2 style="text-align: center; color: #0066CC; font-size: 42px; margin-bottom: 50px; grid-column: 1 / -1;">Top Use Cases</h2>
             
-            <div class="feature" style="background: rgba(0, 102, 204, 0.12); border: 2px solid #0066CC;">
+            <div class="feature" style="background: rgba(0, 102, 204, 0.08); border: 2px solid #0066CC;">
                 <div class="feature-icon">🏠</div>
                 <h3>Real Estate & Property</h3>
                 <p><strong>Pre-sale documentation:</strong> Document property condition before listing. <strong>Rental inspections:</strong> Prove move-in/move-out condition with timestamps. <strong>Construction progress:</strong> Verify completion dates and quality. <strong>Dispute resolution:</strong> Undeniable proof of property damage or condition.</p>
